@@ -31,7 +31,7 @@ class Wheel:
     def randomize(self):
         move = self.rng.randrange(1, 10)
         self.faces = self.faces[move:] + self.faces[:move]
-        self.rng = .SystemRandom()
+        self.rng = random.SystemRandom()
 
 
 class Machine:
